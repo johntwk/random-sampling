@@ -10,7 +10,7 @@ def random_sampling(sample, size, is_replacement = True):
         rt_lst = [random.choice(sample) for index in range(0,size)]
         return rt_lst
     else:
-        if (size > is_replacement):
+        if (size > len_sample):
             raise ValueError('size must be less than or equal to size of sample for without replacement.')
         rt_lst = []
         for index in range(0,size):
